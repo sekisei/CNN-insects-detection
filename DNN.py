@@ -23,8 +23,8 @@ image_num_test=50
 all_image_num_train=2*image_num_train
 all_image_num_test=2*image_num_test
 epochs=200
-base_dir_for_train='/home/kai/デスクトップ/Programs/pythonDNN/samples/samples_remake_20000/'
-base_dir_for_test='/home/kai/デスクトップ/Programs/pythonDNN/samples/data_test_samples_50/'
+base_dir_for_train='pythonDNN/samples/samples_remake_20000/'
+base_dir_for_test='pythonDNN/samples/data_test_samples_50/'
 
 #------------------------------------------------------------------------------------------------------------------------------------------------
 #学習データ
@@ -125,7 +125,7 @@ show_result_of_test(output,Y_test)
 '''
 
 #---------------------------------------------------------------------------画像認識
-cap=cv2.VideoCapture("/home/kai/デスクトップ/Programs/pythonDNN/samples/sample_video/not_mine.mp4")
+cap=cv2.VideoCapture("pythonDNN/samples/sample_video/not_mine.mp4")
 #cap=cv2.VideoCapture(0) 
 ret, frame=cap.read()
 size=frame.shape
